@@ -7,6 +7,8 @@ export const printNav = (arr) => {
   let ulNav = document.createElement("ul");
   ulNav.classList.add("ul-nav");
 
+  let logo = document.createElement("img");
+
   arr.forEach((element) => {
     let liNav = document.createElement("li");
     liNav.classList.add("liNav");
