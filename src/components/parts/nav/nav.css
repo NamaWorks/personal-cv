@@ -1,0 +1,35 @@
+nav {
+  position: fixed;
+  bottom: -20px;
+  background-color: var(--NW-dark-grey-opacity);
+  width: 100%;
+}
+
+.ul-nav {
+  position: relative;
+  bottom: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  list-style: none;
+  font-size: var(--NW-font-size-titles);
+  gap: 0;
+}
+.liNav {
+  color: var(--NW-dark-grey);
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  width: 100%;
+  list-style: none;
+  padding: 7px 25px;
+}
+
+.liNav a {
+  color: var(--NW-dark-grey);
+  text-decoration: none;
+}
+
+.liNav:hover {
+  background-color: var(--NW-aqua);
+}

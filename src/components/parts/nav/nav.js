@@ -1,5 +1,6 @@
 import data from "../../data/data";
 import app from "../../data/global_variables";
+import "./nav.css";
 
 export const printNav = (arr) => {
   let nav = document.createElement("nav");
