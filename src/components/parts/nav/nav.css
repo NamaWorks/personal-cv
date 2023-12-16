@@ -5,6 +5,14 @@ nav {
   width: 100%;
 }
 
+#top-left-logo {
+  position: absolute;
+  width: 100px;
+  bottom: 100%;
+  top: -92svh;
+  left: 6svh;
+}
+
 .ul-nav {
   position: relative;
   bottom: 20px;
@@ -15,7 +23,7 @@ nav {
   font-size: var(--NW-font-size-titles);
   gap: 0;
 }
-.liNav {
+.li-nav {
   color: var(--NW-dark-grey);
   display: flex;
   justify-content: center;
@@ -25,11 +33,35 @@ nav {
   padding: 7px 25px;
 }
 
-.liNav a {
+.li-nav a {
   color: var(--NW-dark-grey);
   text-decoration: none;
 }
 
-.liNav:hover {
+.nav-li-mask {
+  position: absolute;
+  bottom: -100px;
+  width: 25%;
+  height: 100%;
+  transition: 0.4s ease-in-out;
+  overflow: visible;
+  z-index: -99;
+}
+.nav-li-mask-hover {
+  position: absolute;
+  bottom: 0;
   background-color: var(--NW-aqua);
+  width: 25%;
+  height: 100%;
+  z-index: -99;
+}
+
+.button-test {
+  width: 250px;
+  height: 75px;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  left: 50%;
+  bottom: 50%;
 }
