@@ -6,4 +6,14 @@ import { printNav } from "./src/components/parts/nav/nav";
 
 printNav(data.navTexts);
 
+import { printSection } from "./src/components/parts/who-section/who-section";
+
+const printSectionsFromData = () => {
+  for (const section in data.sections) {
+    printSection(section);
+  }
+};
+
+printSectionsFromData();
+
 // Podemos usar window.onload() para el page loader ?

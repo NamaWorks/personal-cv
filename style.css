@@ -22,6 +22,8 @@
   --NW-font-size-titles: 1.5rem;
   /* GAPS-MARGINS-PADDINGS */
   --NW-gap-l: 15rem;
+  /* TRANSITION */
+  --NW-transition-01: 0.4s ease-out;
 }
 
 * {
