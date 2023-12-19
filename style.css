@@ -20,8 +20,12 @@
   /* FONT */
   --NW-font-family: "n27", monospace, sans-serif;
   --NW-font-size-titles: 1.5rem;
+  --NW-font-weight-titles: 300;
+  --NW-font-size-bg-titles: 9rem;
+  --NW-line-height-bg-titles: 8rem;
   /* GAPS-MARGINS-PADDINGS */
   --NW-gap-l: 15rem;
+  --NW-section-padding-01: 10svw;
   /* TRANSITION */
   --NW-transition-01: 0.4s ease-out;
 }
@@ -35,4 +39,5 @@
 
 html {
   background-color: var(--NW-light-grey);
+  scroll-behavior: smooth;
 }
