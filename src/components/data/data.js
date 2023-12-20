@@ -29,14 +29,14 @@ const data = {
       navText: "who",
       sectionTitle: "who is nama?",
       sectionParagraph:
-        "Pedro “Nama” Naya is a motion, visual designer and developer based in Andalucía, Spain. Formerly graduated in Advertising and Public Relations by the University of Cádiz and motion graphics student at Trazos_ (Madrid). Now Discovering the fun in development and programming at TPMBA. A never relaxed individual eager to learn at any chance given.",
+        "Pedro “Nama” Naya is a motion, visual designer and developer based in Andalucía, Spain.<br><br> Formerly graduated in Advertising and Public Relations by the University of Cádiz and motion graphics student at Trazos_ (Madrid). Now Discovering the fun in development and programming at TPMBA.<br><br> A never relaxed individual eager to learn at any chance given.",
       sectionBgTexts: ["2023/2024", "portfolio", "page"],
     },
     whatSection: {
       navText: "what",
       sectionTitle: "what does nama do?",
       sectionParagraph:
-        "Mainly motion design for brands and agencies, but also leaving some time for other kind of projects, looking for some experimentation and more creative freedom. Some important clients are: ",
+        "Mainly motion design for brands and agencies, but also leaving some time for other kind of projects, looking for some experimentation and more creative freedom. <br> Some important clients are: ",
       clients: {
         ikea: {
           clientName: "IKEA",
@@ -155,11 +155,13 @@ const data = {
   },
   navTexts: ["who", "do", "know", "more"],
   dailyMessages: [
+    "Working on Weekends?",
     "Long week ahead?",
     "Tueeeeeeeeeeeeeeeeeeeeeeeeeeesday",
     "Halfway to the weekend! Let's go!",
     "I can even touch the weekend",
     "Finally!, Friday is here :D",
+    "Working on Weekends?",
   ],
   projectsClasses: ["Art Direction", "Motion Graphics", "Brand Dev", "Web Dev"],
   projects: {

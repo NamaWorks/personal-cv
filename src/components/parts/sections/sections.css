@@ -18,7 +18,8 @@ section {
   flex-direction: column;
   position: relative;
   opacity: 100svw;
-  min-width: 500px;
+  min-width: 45svw;
+  max-width: 550px;
   top: 5svw;
 }
 
@@ -32,4 +33,26 @@ section {
   left: -25svw;
   top: -2svw;
   line-height: var(--NW-line-height-bg-titles);
+}
+
+.section-title {
+  font-size: var(--NW-font-size-titles);
+  text-transform: capitalize;
+  font-weight: var(--NW-font-weight-titles);
+}
+.section-paragraph {
+  position: relative;
+  left: 50px;
+  top: 50px;
+}
+
+#daily-msg {
+  position: absolute;
+  transform: rotate(90deg);
+  top: 50%;
+  left: -125px;
+  font-weight: var(--NW-font-weight-titles);
+  text-transform: capitalize;
+  background-color: var(--NW-aqua);
+  z-index: 99;
 }

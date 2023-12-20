@@ -24,6 +24,7 @@ export const printSections = (sectionName) => {
 
   let sectionBgTextDom = document.createElement("h2");
   sectionBgTextDom.classList.add("bg-text");
+  sectionBgTextDom.setAttribute("id", `bg-text-${sectionName}`);
   sectionBgTextDom.innerText = sctBgTexts.join(" ");
 
   sectionsDivDom.append(section);
@@ -33,7 +34,7 @@ export const printSections = (sectionName) => {
   if (sctParagraph) {
     let sectionParagraphDom = document.createElement("p");
     sectionParagraphDom.classList.add("section-paragraph");
-    sectionParagraphDom.innerText = sctParagraph;
+    sectionParagraphDom.innerHTML = sctParagraph;
     sectionTextsDom.append(sectionParagraphDom);
   }
 };
@@ -56,3 +57,19 @@ const addSideScroll = (element) => {
   });
 };
 addSideScroll(sectionsDivDom);
+
+const getCurrentWeekDay = () => {
+  let currentDate = new Date();
+  let weekDay = currentDate.getDay();
+  return weekDay;
+};
+const printDailyMsg = () => {
+  let dayNumber = getCurrentWeekDay();
+  let dailyMsg = data.dailyMessages[dayNumber];
+  console.log(dailyMsg);
+  let dailyMsgDom = document.createElement("h3");
+  dailyMsgDom.innerText = dailyMsg;
+  dailyMsgDom.setAttribute("id", "daily-msg");
+  app.append(dailyMsgDom);
+};
+printDailyMsg();
