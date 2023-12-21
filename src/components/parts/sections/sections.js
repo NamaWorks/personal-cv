@@ -8,6 +8,7 @@ export const printSections = (sectionName) => {
   const sctTitle = data.sections[sectionName].sectionTitle;
   const sctParagraph = data.sections[sectionName].sectionParagraph;
   const sctBgTexts = data.sections[sectionName].sectionBgTexts;
+  const sctClients = data.sections[sectionName].clients;
 
   let section = document.createElement("section");
   section.setAttribute("id", `${sectionName}`);
