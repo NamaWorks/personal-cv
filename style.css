@@ -43,3 +43,25 @@ html {
   background-color: var(--NW-light-grey);
   scroll-behavior: smooth;
 }
+
+.page-loader-div {
+  background-color: var(--NW-dark-grey);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  bottom: 0svh;
+  left: 0svw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+  opacity: 1;
+  transition: var(--NW-transition-01);
+}
+
+.hidden-page-loader {
+  opacity: 0;
+}
+#page-loader {
+  width: 35%;
+}

@@ -10,6 +10,7 @@ section {
   display: flex;
   width: 100svw;
   height: 100svh;
+  align-items: center;
   padding: var(--NW-section-padding-01);
 }
 
@@ -17,10 +18,10 @@ section {
   display: flex;
   flex-direction: column;
   position: relative;
-  opacity: 100svw;
+  /* opacity: 100svw; */
   min-width: 45svw;
   max-width: 550px;
-  top: 5svw;
+  top: -2svw;
 }
 
 .bg-text {
@@ -29,9 +30,10 @@ section {
   text-transform: uppercase;
   text-align: right;
   opacity: 10%;
-  position: relative;
-  left: -25svw;
-  top: -2svw;
+  max-width: 1000px;
+  /* position: relative; */
+  /* left: -25svw; */
+  /* top: -2svw; */
   line-height: var(--NW-line-height-bg-titles);
 }
 
@@ -44,15 +46,4 @@ section {
   position: relative;
   left: 50px;
   top: 50px;
-}
-
-#daily-msg {
-  position: absolute;
-  transform: rotate(90deg);
-  top: 50%;
-  left: -125px;
-  font-weight: var(--NW-font-weight-titles);
-  text-transform: capitalize;
-  background-color: var(--NW-aqua);
-  z-index: 99;
 }
