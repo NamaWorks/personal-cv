@@ -63,7 +63,7 @@ const data = {
           projectUrl: "#",
         },
       },
-      sectionBgTexts: ["motion", "development", "for brands"],
+      sectionBgTexts: ["motion", "&", "development", "for brands"],
     },
     knowSection: {
       navText: "know",

@@ -1,5 +1,5 @@
 import "./sections.css";
-import "./whoSct.css";
+import "./whatSct.css";
 import data from "../../data/data";
 import { sectionsDivDom, app } from "../../data/global_variables";
 

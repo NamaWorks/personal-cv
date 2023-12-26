@@ -1,0 +1,10 @@
+#whatSection .bg-text {
+  text-align: left;
+  position: relative;
+  left: -50svw;
+  bottom: -25svh;
+}
+
+#whatSection .section-texts {
+  top: -20svh;
+}

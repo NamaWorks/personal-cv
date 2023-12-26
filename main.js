@@ -15,7 +15,9 @@ import { printNav } from "./src/components/parts/nav/nav";
 printNav(data.navTexts);
 
 import { printWhoSct } from "./src/components/parts/sections/whoSct.js";
+import { printWhatSct } from "./src/components/parts/sections/whatSct.js";
 printWhoSct("whoSection");
+printWhatSct("whatSection");
 
 import { printDailyMsg } from "./src/components/parts/daily-msg/daily-msg";
 printDailyMsg();
