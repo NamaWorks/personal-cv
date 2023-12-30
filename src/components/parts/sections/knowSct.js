@@ -4,7 +4,7 @@ import data from "../../data/data";
 import { sectionsDivDom, app } from "../../data/global_variables";
 import { getRandomInteger } from "../individual-functions/get-random-integer";
 
-export const printWhatSct = (sectionName) => {
+export const printKnowSct = (sectionName) => {
   let sctTitle = data.sections[sectionName].sectionTitle;
   let sctParagraph = data.sections[sectionName].sectionParagraph;
   let sctBgTexts = data.sections[sectionName].sectionBgTexts;

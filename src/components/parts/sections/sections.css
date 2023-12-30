@@ -7,6 +7,7 @@
 }
 
 section {
+  position: relative;
   display: flex;
   width: 100svw;
   height: 100svh;
@@ -14,21 +15,21 @@ section {
   padding: var(--NW-section-padding-01);
 }
 
-.section-texts {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  /* opacity: 100svw; */
-  min-width: 45svw;
-  max-width: 550px;
-  top: -2svw;
-}
+/* .section-texts { */
+/* display: flex; */
+/* flex-direction: column; */
+/* position: relative; */
+/* opacity: 100svw; */
+/* min-width: 45svw; */
+/* max-width: 550px; */
+/* top: -2svw; */
+/* } */
 
 .bg-text {
   font-weight: var(--NW-font-weight-titles);
   font-size: var(--NW-font-size-bg-titles);
   text-transform: uppercase;
-  text-align: right;
+  /* text-align: right; */
   opacity: 10%;
   max-width: 1000px;
   /* position: relative; */

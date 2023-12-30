@@ -1,4 +1,16 @@
+#whoSection {
+  right: -2.5svw;
+}
+
 #whoSection .bg-text {
-  position: relative;
-  right: 200px;
+  position: absolute;
+  right: 15svw;
+  top: 25svh;
+  font-size: 12rem;
+  line-height: 12rem;
+  text-align: right;
+}
+
+#whoSection .section-texts {
+  max-width: 600px;
 }

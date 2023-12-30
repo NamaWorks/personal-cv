@@ -19,10 +19,10 @@
   --NW-white: #ffffff;
   /* FONT */
   --NW-font-family: "n27", monospace, sans-serif;
-  --NW-font-size-titles: 1.5rem;
+  --NW-font-size-titles: 1.75rem;
   --NW-font-weight-titles: 300;
   --NW-font-size-bg-titles: 9rem;
-  --NW-font-size-p: 1rem;
+  --NW-font-size-p: 1.25rem;
   --NW-font-weight-p: 300;
   --NW-line-height-bg-titles: 8rem;
   /* GAPS-MARGINS-PADDINGS */
@@ -64,4 +64,9 @@ html {
 }
 #page-loader {
   width: 35%;
+}
+
+p {
+  font-size: var(--NW-font-size-p);
+  font-weight: var(--NW-font-weight-p);
 }

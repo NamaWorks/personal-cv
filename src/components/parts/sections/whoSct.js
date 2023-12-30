@@ -24,7 +24,7 @@ export const printWhoSct = (sectionName) => {
   let sectionBgTextDom = document.createElement("h2");
   sectionBgTextDom.classList.add("bg-text");
   sectionBgTextDom.setAttribute("id", `bg-text-${sectionName}`);
-  sectionBgTextDom.innerText = sctBgTexts.join(" ");
+  sectionBgTextDom.innerText = sctBgTexts.join("\n");
 
   sectionsDivDom.append(section);
   section.append(sectionTextsDom);
@@ -37,6 +37,5 @@ export const printWhoSct = (sectionName) => {
   sectionTextsDom.append(sectionParagraphDom);
 
   // add section to DOM
-  sectionsDivDom.setAttribute("id", "div-for-x-scroll");
   sectionsDivDom.append(section);
 };

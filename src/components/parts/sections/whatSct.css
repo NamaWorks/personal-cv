@@ -1,10 +1,56 @@
+#whatSection {
+  display: flex;
+  flex-direction: row;
+}
+
 #whatSection .bg-text {
   text-align: left;
-  position: relative;
-  left: -50svw;
-  bottom: -25svh;
+  position: absolute;
+  left: 5svw;
+  bottom: 10svh;
 }
 
 #whatSection .section-texts {
-  top: -20svh;
+  position: relative;
+  top: -8svh;
+  left: 15svw;
+  max-width: 400px;
+}
+
+.portfolio-grid {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  right: -40svw;
+  height: 80svh;
+  overflow: hidden;
+  gap: 0;
+}
+
+.project {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  max-width: 15svw;
+  min-height: 10px;
+  filter: grayscale(0);
+  transition: var(--NW-transition-01);
+}
+
+.project-image {
+  width: 100%;
+}
+
+.project-big {
+  flex: 1.5;
+}
+
+.project:hover {
+  flex: 2;
+  filter: grayscale(1);
 }

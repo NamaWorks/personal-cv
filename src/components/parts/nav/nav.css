@@ -3,11 +3,14 @@ nav {
   bottom: -20px;
   background-color: var(--NW-dark-grey-opacity);
   width: 100%;
+  z-index: 99;
 }
 
 #top-left-logo {
   position: absolute;
-  width: 50px;
+  min-width: 50px;
+  width: 5svw;
+  max-width: 125px;
   bottom: 100%;
   top: -92svh;
   left: 6svh;

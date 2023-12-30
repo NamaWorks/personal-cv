@@ -166,7 +166,7 @@ const data = {
   projectsClasses: ["Art Direction", "Motion Graphics", "Brand Dev", "Web Dev"],
   projects: {
     project01: {
-      projectName: "Chanel - Product Viz",
+      projectName: "Chanel",
       category: "Art Direction",
       year: 2022,
       imageUrl:
@@ -208,6 +208,8 @@ const data = {
     project05: {
       projectName: "Scribz Riley",
       category: "Motion Graphics",
+      imageUrl:
+        "https://res.cloudinary.com/dgrhbsilh/image/upload/v1703893121/Personal%20CV/ScribzRiley_tdkq1i.png",
       videoUrl:
         "https://res.cloudinary.com/dgrhbsilh/video/upload/v1702488493/Personal%20CV/02_ujfolo.mp4",
       year: 2022,
@@ -216,14 +218,18 @@ const data = {
     project06: {
       projectName: "Ikea",
       category: "Motion Graphics",
+      imageUrl:
+        "https://res.cloudinary.com/dgrhbsilh/image/upload/v1703764037/Personal%20CV/ikeaProject_y96axn.png",
       videoUrl:
         "https://res.cloudinary.com/dgrhbsilh/video/upload/v1702488485/Personal%20CV/01_Patro_Ikea_cjoc2h.mp4",
       year: 2023,
       url: "https://nama.works/",
     },
     project07: {
-      projectName: "Blacknosaur Header Animation",
+      projectName: "Blacknosaur Animation",
       category: "Motion Graphics",
+      imageUrl:
+        "https://res.cloudinary.com/dgrhbsilh/image/upload/t_600px width/v1703794147/Personal%20CV/blacknosaurAnimation_wzaa58.png",
       videoUrl:
         "https://res.cloudinary.com/dgrhbsilh/video/upload/v1702488617/Personal%20CV/motion_header_bvgcqm.mp4",
       year: 2021,
@@ -233,7 +239,7 @@ const data = {
       projectName: "LoLoCoCo®",
       category: "Web Dev",
       imageUrl:
-        "https://res.cloudinary.com/dgrhbsilh/image/upload/v1702490273/Personal%20CV/lolococo_logo_fi90ug.png",
+        "https://res.cloudinary.com/dgrhbsilh/image/upload/t_600px width/v1703892466/Personal%20CV/lolococo_logo_fi90ug.png",
       year: 2023,
       url: "https://lolococo.netlify.app/",
     },
