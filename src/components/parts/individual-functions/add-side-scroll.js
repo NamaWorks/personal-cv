@@ -4,7 +4,7 @@ export const addSideScroll = (element) => {
     event.preventDefault();
 
     element.scrollBy({
-      left: event.deltaY < 0 ? -20 : 20,
+      left: event.deltaY < 0 ? -50 : 50,
     });
   });
 };

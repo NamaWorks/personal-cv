@@ -1,5 +1,5 @@
 import "./sections.css";
-import "./whatSct.css";
+import "./knowSct.css";
 import data from "../../data/data";
 import { sectionsDivDom, app } from "../../data/global_variables";
 import { getRandomInteger } from "../individual-functions/get-random-integer";
@@ -21,67 +21,87 @@ export const printKnowSct = (sectionName) => {
   sectionTitleDom.innerText = sctTitle;
   sectionTextsDom.append(sectionTitleDom);
 
-  // section paragraph
-  let sectionParagraphDom = document.createElement("p");
-  sectionParagraphDom.classList.add("section-paragraph");
-  sectionParagraphDom.innerHTML = sctParagraph;
-  sectionTextsDom.append(sectionParagraphDom);
+  // Section Content
+  let sectionContentDiv = document.createElement("div");
+  sectionContentDiv.classList.add(`${sectionName}-content`);
 
-  // portfolio grid
-  let portfolioDiv = document.createElement("div");
-  portfolioDiv.classList.add("portfolio-grid");
+  const contentsDirection = data.sections[sectionName].sectionContent;
 
-  // add portfolio elements
-  const createProjectFile = (project) => {
-    let projectDiv = document.createElement("div");
-    projectDiv.classList.add("project");
-    projectDiv.setAttribute("id", `${project}`);
-    let pName = project.projectName;
-    let pYear = project.year;
-    let pCategory = project.category;
-    let pUrl = project.url;
+  const printCategoriesDivs = () => {
+    for (const category in data.sections[sectionName].sectionContent) {
+      let categoryDivDom = document.createElement("div");
+      categoryDivDom.setAttribute("id", `${category}`);
+      categoryDivDom.classList.add("know-sct-category");
+      sectionContentDiv.append(categoryDivDom);
 
-    let randomNumber = getRandomInteger();
-    if (randomNumber > 3) {
-      projectDiv.classList.add("project-big");
-    }
+      let categoryTitle = document.createElement("h3");
+      categoryTitle.classList.add("know-category-title");
+      categoryTitle.innerText = `${category}:`;
+      categoryDivDom.append(categoryTitle);
 
-    let imageUrl01 = data.projects[project].imageUrl;
-    let videoUrl01 = data.projects[project].videoUrl;
-    // console.log(imageUrl01);
+      if (category === "education") {
+        let educationList = document.createElement("ul");
+        educationList.setAttribute("id", `${category}-list`);
+        categoryDivDom.append(educationList);
+        for (const listItem in contentsDirection[`${category}`]) {
+          let educationLiElement = document.createElement("li");
+          educationLiElement.classList.add("know-li");
+          educationLiElement.innerHTML = `
+          <p>
+          ${contentsDirection[`${category}`][listItem].startDate}-${
+            contentsDirection[`${category}`][listItem].endDate
+          } 
+          </p>
+          <p>${contentsDirection[`${category}`][listItem].degree}</p>
+          <p>${contentsDirection[`${category}`][listItem].institution}</p>
+          `;
 
-    if (imageUrl01) {
-      let imageDom = document.createElement("img");
-      imageDom.setAttribute("src", `${imageUrl01}`);
-      imageDom.classList.add("project-image");
-      projectDiv.append(imageDom);
-      let randomNumber = getRandomInteger();
-      if (randomNumber > 3) {
-        projectDiv.classList.add("project-big");
+          educationList.append(educationLiElement);
+        }
+      } else if (category === "skills") {
+        let skillsList = document.createElement("ul");
+        skillsList.setAttribute("id", "skills-list");
+        categoryDivDom.append(skillsList);
+
+        for (const skill in contentsDirection[`${category}`]) {
+          let skillText = contentsDirection[`${category}`][skill];
+          let skillLiElement = document.createElement("li");
+          skillLiElement.classList.add("know-li");
+          skillLiElement.innerText = skillText;
+
+          skillsList.append(skillLiElement);
+        }
+      } else if (category === "experience") {
+        let experienceList = document.createElement("ul");
+        experienceList.setAttribute("id", `${category}-list`);
+        categoryDivDom.append(experienceList);
+        for (const listItem in contentsDirection[`${category}`]) {
+          let experienceLiElement = document.createElement("li");
+          experienceLiElement.classList.add("know-li");
+          experienceLiElement.innerHTML = `
+          <p>
+          ${contentsDirection[`${category}`][listItem].startDate}-${
+            contentsDirection[`${category}`][listItem].endDate
+          } 
+          </p>
+          <p>${contentsDirection[`${category}`][listItem].position}</p>
+          <a href=${contentsDirection[`${category}`][listItem].companyUrl} >${
+            contentsDirection[`${category}`][listItem].company
+          }</a>
+          `;
+
+          experienceList.append(experienceLiElement);
+        }
       }
-    } else {
-      console.log(`pending to finish this feature`);
-      // let videoDom = document.createElement("img");
-      // videoDom.setAttribute("iframe", `${videoUrl01}`);
-      // projectDiv.append(videoDom);
     }
-    portfolioDiv.append(projectDiv);
   };
-  for (const project in data.projects) {
-    createProjectFile(project);
-  }
-
-  // BG text
-  let sectionBgTextDom = document.createElement("h2");
-  sectionBgTextDom.classList.add("bg-text");
-  sectionBgTextDom.setAttribute("id", `bg-text-${sectionName}`);
-  sectionBgTextDom.innerText = sctBgTexts.join(" ");
+  printCategoriesDivs();
 
   sectionsDivDom.append(section);
+
   section.append(sectionTextsDom);
-  section.append(sectionBgTextDom);
+  section.append(sectionContentDiv);
 
   // add section to DOM
   sectionsDivDom.append(section);
-  section.append(portfolioDiv);
 };

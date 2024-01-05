@@ -1,0 +1,13 @@
+#knowSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* flex-wrap: wrap; */
+}
+
+.knowSection-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 50svh;
+}

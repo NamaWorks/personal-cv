@@ -12,7 +12,7 @@ app.append(sectionsDivDom);
 addSideScroll(sectionsDivDom);
 
 import { launchPageLoader } from "./src/components/parts/individual-functions/page-loader";
-launchPageLoader();
+// launchPageLoader();
 
 import { printWhoSct } from "./src/components/parts/sections/whoSct.js";
 import { printWhatSct } from "./src/components/parts/sections/whatSct.js";
