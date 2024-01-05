@@ -11,3 +11,8 @@
   flex-wrap: wrap;
   max-height: 50svh;
 }
+
+.know-sct-category h3 {
+  text-transform: capitalize;
+  font-size: 30px;
+}

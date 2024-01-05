@@ -17,9 +17,11 @@ import { launchPageLoader } from "./src/components/parts/individual-functions/pa
 import { printWhoSct } from "./src/components/parts/sections/whoSct.js";
 import { printWhatSct } from "./src/components/parts/sections/whatSct.js";
 import { printKnowSct } from "./src/components/parts/sections/knowSct.js";
+import { printMoreSct } from "./src/components/parts/sections/moreSct.js";
 printWhoSct("whoSection");
 printWhatSct("whatSection");
 printKnowSct("knowSection");
+printMoreSct("moreSection");
 
 import { printDailyMsg } from "./src/components/parts/daily-msg/daily-msg";
 printDailyMsg();
