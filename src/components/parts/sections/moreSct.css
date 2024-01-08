@@ -1,0 +1,28 @@
+#moreSection {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 10svh;
+}
+
+#moreSection .bg-text {
+  position: absolute;
+  left: 5svw;
+  bottom: 20svh;
+  font-size: 12rem;
+  line-height: 12rem;
+}
+
+#moreSection form {
+  display: flex;
+  flex-direction: column;
+}
+
+.moreSection-content {
+  display: flex;
+}
+
+#social-links {
+  display: flex;
+  flex-direction: column;
+}
