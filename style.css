@@ -65,8 +65,12 @@ html {
 #page-loader {
   width: 35%;
 }
+p h1 h2 h3 h4 li a {
+  color: var(--NW-dark-grey);
+}
 
 p {
   font-size: var(--NW-font-size-p);
   font-weight: var(--NW-font-weight-p);
+  color: var(--NW-dark-grey);
 }

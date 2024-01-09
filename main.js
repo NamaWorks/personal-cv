@@ -18,6 +18,7 @@ import { printWhoSct } from "./src/components/parts/sections/whoSct.js";
 import { printWhatSct } from "./src/components/parts/sections/whatSct.js";
 import { printKnowSct } from "./src/components/parts/sections/knowSct.js";
 import { printMoreSct } from "./src/components/parts/sections/moreSct.js";
+
 printWhoSct("whoSection");
 printWhatSct("whatSection");
 printKnowSct("knowSection");

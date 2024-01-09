@@ -2,9 +2,11 @@
   position: absolute;
   transform: rotate(90deg);
   top: 50%;
-  left: -2svw;
+  left: -3svw;
   font-weight: var(--NW-font-weight-titles);
   text-transform: capitalize;
   background-color: var(--NW-aqua);
   z-index: 99;
+  padding: 0.3rem;
+  user-select: none;
 }

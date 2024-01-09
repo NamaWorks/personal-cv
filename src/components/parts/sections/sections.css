@@ -36,6 +36,7 @@ section {
   /* left: -25svw; */
   /* top: -2svw; */
   line-height: var(--NW-line-height-bg-titles);
+  user-select: none;
 }
 
 .section-title {

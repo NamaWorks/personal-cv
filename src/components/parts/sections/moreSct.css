@@ -2,13 +2,13 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  top: 10svh;
+  /* top: 10svh; */
 }
 
 #moreSection .bg-text {
   position: absolute;
   left: 5svw;
-  bottom: 20svh;
+  bottom: 25svh;
   font-size: 12rem;
   line-height: 12rem;
 }
@@ -25,4 +25,11 @@
 #social-links {
   display: flex;
   flex-direction: column;
+}
+
+#moreSection a {
+  color: var(--NW-dark-grey);
+  font-size: var(--NW-font-size-p);
+  text-transform: uppercase;
+  text-decoration: none;
 }

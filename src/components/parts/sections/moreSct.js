@@ -30,7 +30,7 @@ export const printMoreSct = (sectionName) => {
   let mailInputForm = document.createElement("input");
   mailInputForm.type = "mail";
   mailInputForm.setAttribute("id", "mail-input");
-  mailInputLabel.innerText = "e-mail";
+  mailInputLabel.innerText = "your@mail.com";
   mailInputLabel.setAttribute("for", mailInputForm.getAttribute("id"));
 
   //* SUBJECT INPUT
