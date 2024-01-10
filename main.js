@@ -1,4 +1,5 @@
 import "./style.css";
+import "./src/components/parts/individual-functions/function-styles-changes.css";
 import data from "./src/components/data/data";
 import { sectionsDivDom, app } from "./src/components/data/global_variables";
 import "./src/components/parts/change-cursor/change-mouse-cursor.js";
@@ -13,6 +14,7 @@ addSideScroll(sectionsDivDom);
 
 import { launchPageLoader } from "./src/components/parts/individual-functions/page-loader";
 // launchPageLoader();
+// Podemos usar window.onload() para el page loader ?
 
 import { printWhoSct } from "./src/components/parts/sections/whoSct.js";
 import { printWhatSct } from "./src/components/parts/sections/whatSct.js";
@@ -27,4 +29,5 @@ printMoreSct("moreSection");
 import { printDailyMsg } from "./src/components/parts/daily-msg/daily-msg";
 printDailyMsg();
 
-// Podemos usar window.onload() para el page loader ?
+import { changeOneLetterItalic } from "./src/components/parts/individual-functions/change-to-italic.js";
+changeOneLetterItalic("Andamos vendiendo choripanes a coste de pastas gallo");

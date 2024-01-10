@@ -2,6 +2,7 @@ import "./sections.css";
 import "./whoSct.css";
 import data from "../../data/data";
 import { sectionsDivDom, app } from "../../data/global_variables";
+import { changeOneWordColor } from "../individual-functions/change-word-color";
 
 export const printWhoSct = (sectionName) => {
   let sctTitle = data.sections[sectionName].sectionTitle;
@@ -17,7 +18,8 @@ export const printWhoSct = (sectionName) => {
   // title
   let sectionTitleDom = document.createElement("h3");
   sectionTitleDom.classList.add("section-title");
-  sectionTitleDom.innerText = sctTitle;
+  let sctTitleColorChange = changeOneWordColor(sctTitle);
+  sectionTitleDom.innerHTML = sctTitleColorChange;
   sectionTextsDom.append(sectionTitleDom);
 
   // BG text

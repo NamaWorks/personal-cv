@@ -2,7 +2,13 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  gap: 3rem;
+  width: 90svw;
   /* top: 10svh; */
+}
+
+#moreSection h3 {
+  text-indent: -20rem;
 }
 
 #moreSection .bg-text {
@@ -13,13 +19,19 @@
   line-height: 12rem;
 }
 
-#moreSection form {
+#contact-form {
   display: flex;
   flex-direction: column;
 }
 
 .moreSection-content {
   display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 5svw;
+  top: 5svh;
 }
 
 #social-links {
@@ -32,4 +44,59 @@
   font-size: var(--NW-font-size-p);
   text-transform: uppercase;
   text-decoration: none;
+}
+
+#contact-form input,
+textarea {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 40svw;
+  height: 4svh;
+  min-width: 100px;
+  border-radius: 0;
+  background-color: var(--NW-white-opacity);
+  word-break: break-word;
+  /* mix-blend-mode: overlay; */
+  border: none;
+  padding: 30px;
+}
+
+textarea#description-input {
+  height: 20svh;
+}
+
+#submit-button-label {
+  display: none;
+}
+
+#submit-button {
+  border: none;
+  border-radius: 0;
+  height: 4svh;
+  width: 15svw;
+  align-self: flex-end;
+  background-color: var(--NW-dark-grey);
+  position: relative;
+  top: -1rem;
+  right: -3rem;
+}
+
+#submit-button p {
+  color: var(--NW-aqua);
+  text-transform: uppercase;
+  position: relative;
+  top: -0.4rem;
+  right: -2rem;
+}
+
+label {
+  color: var(--NW-dark-grey);
+  opacity: 0.5;
+  font-size: var(--NW-font-size-p);
+  font-weight: 600;
+  position: relative;
+  top: 1rem;
+  left: 1rem;
 }

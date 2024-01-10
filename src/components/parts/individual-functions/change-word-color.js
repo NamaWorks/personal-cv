@@ -1,17 +1,16 @@
 import { getRandomInteger } from "./get-random-integer";
 
-export const changeWordColor = (string) => {
-  let min = 0;
-  let max = string.length;
-
-  for (let i = 0; i < array.length; i++) {
-    let randomInteger = getRandomInteger(firstIndex, max);
-    console.log(randomInteger);
-
-    let dividedString = string.split(" ");
-    console.log(dividedString);
-
-    let selectedWord = dividedString[randomInteger];
-    selectedWord.classList.add("aqua-word");
-  }
+export const changeOneWordColor = (string) => {
+  let wordsArray = string.split(" ");
+  // console.log(wordsArray);
+  let randomInteger = getRandomInteger(0, wordsArray.length - 1);
+  // console.log(randomInteger);
+  let randomWord = wordsArray[randomInteger];
+  // console.log(randomWord);
+  let coloredString = string.replace(
+    randomWord,
+    "<span class = 'change-word-color'>" + randomWord + "</span>"
+  );
+  // console.log(coloredString);
+  return coloredString;
 };

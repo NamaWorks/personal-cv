@@ -24,7 +24,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  right: -40svw;
+  right: -35svw;
   height: 80svh;
   overflow: hidden;
   gap: 0;
@@ -36,7 +36,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  max-width: 15svw;
+  max-width: 25svw;
   min-height: 10px;
   filter: grayscale(0);
   transition: var(--NW-transition-01);

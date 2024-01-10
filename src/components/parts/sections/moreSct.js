@@ -3,6 +3,7 @@ import "./moreSct.css";
 import data from "../../data/data";
 import { sectionsDivDom, app } from "../../data/global_variables";
 import { getRandomInteger } from "../individual-functions/get-random-integer";
+import { changeOneWordColor } from "../individual-functions/change-word-color";
 
 export const printMoreSct = (sectionName) => {
   let sctTitle = data.sections[sectionName].sectionTitle;
@@ -17,13 +18,15 @@ export const printMoreSct = (sectionName) => {
   // title
   let sectionTitleDom = document.createElement("h3");
   sectionTitleDom.classList.add("section-title");
-  sectionTitleDom.innerText = sctTitle;
+  let sctTitleColorChange = changeOneWordColor(sctTitle);
+  sectionTitleDom.innerHTML = sctTitleColorChange;
   sectionTextsDom.append(sectionTitleDom);
 
   // Form and Social Links
   let moreSectionContent = document.createElement("div");
   moreSectionContent.classList.add(`${sectionName}-content`);
   let formDom = document.createElement("form");
+  formDom.setAttribute("id", "contact-form");
 
   //* MAIL INPUT
   let mailInputLabel = document.createElement("label");
@@ -32,6 +35,10 @@ export const printMoreSct = (sectionName) => {
   mailInputForm.setAttribute("id", "mail-input");
   mailInputLabel.innerText = "your@mail.com";
   mailInputLabel.setAttribute("for", mailInputForm.getAttribute("id"));
+  mailInputLabel.setAttribute(
+    "id",
+    mailInputForm.getAttribute("id") + "-label"
+  );
 
   //* SUBJECT INPUT
   let subjectInputLabel = document.createElement("label");
@@ -40,25 +47,39 @@ export const printMoreSct = (sectionName) => {
   subjectInputForm.setAttribute("id", "subject-input");
   subjectInputLabel.innerText = "Subject";
   subjectInputLabel.setAttribute("for", subjectInputForm.getAttribute("id"));
+  subjectInputLabel.setAttribute(
+    "id",
+    subjectInputForm.getAttribute("id") + "-label"
+  );
 
   //* DESCRIPTION INPUT
   let descriptionInputLabel = document.createElement("label");
-  let descriptionInputForm = document.createElement("input");
-  descriptionInputForm.type = "text";
+  let descriptionInputForm = document.createElement("textarea");
+  // descriptionInputForm.type = "text";
   descriptionInputForm.setAttribute("id", "description-input");
   descriptionInputLabel.innerText = "What do you need?";
   descriptionInputLabel.setAttribute(
     "for",
     descriptionInputForm.getAttribute("id")
   );
+  descriptionInputLabel.setAttribute(
+    "id",
+    descriptionInputForm.getAttribute("id") + "-label"
+  );
 
   //* SUBMIT BUTTON
   let submitButtonLabel = document.createElement("label");
   let submitButtonForm = document.createElement("button");
   submitButtonLabel.innerText = "submit";
-  submitButtonForm.innerText = "Submit";
+  let submitButtonInnerP = document.createElement("p");
+  submitButtonInnerP.innerText = "Submit";
+  submitButtonForm.append(submitButtonInnerP);
   submitButtonForm.setAttribute("id", "submit-button");
   submitButtonLabel.setAttribute("for", submitButtonForm.getAttribute("id"));
+  submitButtonLabel.setAttribute(
+    "id",
+    submitButtonForm.getAttribute("id") + "-label"
+  );
 
   // OTHER LINKS
   const createSocialLinks = () => {

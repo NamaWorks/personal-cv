@@ -3,6 +3,7 @@ import "./whatSct.css";
 import data from "../../data/data";
 import { sectionsDivDom, app } from "../../data/global_variables";
 import { getRandomInteger } from "../individual-functions/get-random-integer";
+import { changeOneWordColor } from "../individual-functions/change-word-color";
 
 export const printWhatSct = (sectionName) => {
   let sctTitle = data.sections[sectionName].sectionTitle;
@@ -18,7 +19,8 @@ export const printWhatSct = (sectionName) => {
   // title
   let sectionTitleDom = document.createElement("h3");
   sectionTitleDom.classList.add("section-title");
-  sectionTitleDom.innerText = sctTitle;
+  let sctTitleColorChange = changeOneWordColor(sctTitle);
+  sectionTitleDom.innerHTML = sctTitleColorChange;
   sectionTextsDom.append(sectionTitleDom);
 
   // section paragraph
