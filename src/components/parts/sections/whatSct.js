@@ -4,6 +4,7 @@ import data from "../../data/data";
 import { sectionsDivDom, app } from "../../data/global_variables";
 import { getRandomInteger } from "../individual-functions/get-random-integer";
 import { changeOneWordColor } from "../individual-functions/change-word-color";
+import { changeItalic } from "../individual-functions/change-to-italic";
 
 export const printWhatSct = (sectionName) => {
   let sctTitle = data.sections[sectionName].sectionTitle;
@@ -12,6 +13,7 @@ export const printWhatSct = (sectionName) => {
 
   let section = document.createElement("section");
   section.setAttribute("id", `${sectionName}`);
+  section.classList.add("section");
 
   let sectionTextsDom = document.createElement("div");
   sectionTextsDom.classList.add("section-texts");
@@ -75,9 +77,10 @@ export const printWhatSct = (sectionName) => {
 
   // BG text
   let sectionBgTextDom = document.createElement("h2");
+  let sctBgTextsItalic = changeItalic(sctBgTexts);
   sectionBgTextDom.classList.add("bg-text");
   sectionBgTextDom.setAttribute("id", `bg-text-${sectionName}`);
-  sectionBgTextDom.innerText = sctBgTexts.join(" ");
+  sectionBgTextDom.innerHTML = sctBgTextsItalic;
 
   sectionsDivDom.append(section);
   section.append(sectionTextsDom);

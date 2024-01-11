@@ -30,7 +30,7 @@ const data = {
       sectionTitle: "who is nama?",
       sectionParagraph:
         "Pedro “Nama” Naya is a motion, visual designer and developer based in Andalucía, Spain.<br><br> Formerly graduated in Advertising and Public Relations by the University of Cádiz and motion graphics at Trazos_ (Madrid). Now Discovering the fun in development and programming at TPMBA.<br><br> A never relaxed individual eager to learn at any chance given.",
-      sectionBgTexts: ["2023/2024", "portfolio", "page"],
+      sectionBgTexts: "2023/2024 portfolio page",
     },
     whatSection: {
       navText: "what",
@@ -63,7 +63,7 @@ const data = {
           projectUrl: "#",
         },
       },
-      sectionBgTexts: ["motion", "&", "development", "for brands"],
+      sectionBgTexts: "motion & development for brands",
     },
     knowSection: {
       navText: "know",
@@ -141,7 +141,7 @@ const data = {
         eMail: "hi@nama.works",
         vimeo: "https://vimeo.com/pedronaya",
       },
-      sectionBgTexts: ["get in", "touch"],
+      sectionBgTexts: "get in touch",
     },
     footerSection: {
       sectionBgTexts: ["thanks", "for visiting"],

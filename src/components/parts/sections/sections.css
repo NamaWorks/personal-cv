@@ -4,6 +4,9 @@
   overflow-x: scroll;
   grid-template-columns: repeat(5, auto);
   align-items: center;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scroll-snap-stop: always;
 }
 
 section {
@@ -13,6 +16,7 @@ section {
   height: 100svh;
   align-items: center;
   padding: var(--NW-section-padding-01);
+  scroll-snap-align: center;
 }
 
 /* .section-texts { */

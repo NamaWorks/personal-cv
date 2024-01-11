@@ -36,6 +36,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  width: 100%;
   max-width: 25svw;
   min-height: 10px;
   filter: grayscale(0);

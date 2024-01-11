@@ -1,3 +1,7 @@
 .change-word-color {
   color: var(--NW-aqua);
 }
+
+.change-italic {
+  font-style: italic;
+}

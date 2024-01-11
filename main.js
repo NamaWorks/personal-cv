@@ -28,6 +28,3 @@ printMoreSct("moreSection");
 
 import { printDailyMsg } from "./src/components/parts/daily-msg/daily-msg";
 printDailyMsg();
-
-import { changeOneLetterItalic } from "./src/components/parts/individual-functions/change-to-italic.js";
-changeOneLetterItalic("Andamos vendiendo choripanes a coste de pastas gallo");

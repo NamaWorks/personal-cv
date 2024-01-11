@@ -12,6 +12,7 @@ export const printKnowSct = (sectionName) => {
 
   let section = document.createElement("section");
   section.setAttribute("id", `${sectionName}`);
+  section.classList.add("section");
 
   let sectionTextsDom = document.createElement("div");
   sectionTextsDom.classList.add("section-texts");

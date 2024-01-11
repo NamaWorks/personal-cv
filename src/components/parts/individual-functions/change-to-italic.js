@@ -1,15 +1,21 @@
 import { getRandomInteger } from "./get-random-integer";
 
-export const changeOneLetterItalic = (string) => {
+export const changeItalic = (string) => {
+  let stringArray = string.split("");
+
   let numberOfLettersChanged = Math.round(string.length * 0.3);
-  console.log(numberOfLettersChanged);
-  let randomIndex = getRandomInteger(0, string.length);
-  console.log(randomIndex);
-  let randomLetter = string[randomIndex];
-  console.log(randomLetter);
-  let changedString = string.replace(
-    randomLetter,
-    "<span class='italic-letter'>" + randomLetter + "</span>"
-  );
-  console.log(changedString);
+
+  for (let i = 0; i < numberOfLettersChanged; i++) {
+    let randomIndex = getRandomInteger(0, string.length);
+    let randomLetter = stringArray[randomIndex];
+
+    if (randomLetter) {
+      if (randomLetter.length <= 1) {
+        stringArray[randomIndex] =
+          "<span class='change-italic'>" + randomLetter + "</span>";
+      }
+    }
+  }
+  let joinStringArray = stringArray.join("");
+  return joinStringArray;
 };
