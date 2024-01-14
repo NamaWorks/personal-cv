@@ -18,8 +18,8 @@ export const printNav = (arr) => {
     let liNav = document.createElement("li");
     liNav.classList.add("li-nav");
     liNav.href = `#${element}`;
-    liNav.addEventListener("mouseover", hoverNavElement);
-    liNav.addEventListener("mouseout", hoverNavElement);
+    // liNav.addEventListener("mouseover", hoverNavElement);
+    // liNav.addEventListener("mouseout", hoverNavElement);
     let linkLiNav = document.createElement("a");
     linkLiNav.innerText = element;
     linkLiNav.href = `#${element}`;

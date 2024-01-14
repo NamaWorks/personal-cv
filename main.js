@@ -28,3 +28,8 @@ printMoreSct("moreSection");
 
 import { printDailyMsg } from "./src/components/parts/daily-msg/daily-msg";
 printDailyMsg();
+
+import {
+  getMousePosition,
+  printProjectInfo,
+} from "./src/components/parts/individual-functions/projects-hover.js";

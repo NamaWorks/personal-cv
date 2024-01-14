@@ -5,3 +5,35 @@
 .change-italic {
   font-style: italic;
 }
+
+/* MORE SECTION FORM NOTIFICATION */
+#pop-up {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 99;
+  background-color: var(--NW-aqua);
+  width: 30svw;
+  /* height: 20svh; */
+  top: 10svh;
+  right: 10svh;
+  padding: var(--NW-font-size-p);
+  gap: 1svw;
+}
+
+#buttons-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  gap: 1svw;
+}
+
+#buttons-container button {
+  flex: 1;
+  height: 5svh;
+  background-color: var(--NW-dark-grey);
+  border: none;
+
+  color: var(--NW-aqua);
+}

@@ -5,6 +5,7 @@ import { sectionsDivDom, app } from "../../data/global_variables";
 import { getRandomInteger } from "../individual-functions/get-random-integer";
 import { changeOneWordColor } from "../individual-functions/change-word-color";
 import { changeItalic } from "../individual-functions/change-to-italic";
+import { popupCreation } from "../individual-functions/submit-button-clicked";
 
 export const printMoreSct = (sectionName) => {
   let sctTitle = data.sections[sectionName].sectionTitle;
@@ -82,6 +83,7 @@ export const printMoreSct = (sectionName) => {
     "id",
     submitButtonForm.getAttribute("id") + "-label"
   );
+  submitButtonForm.addEventListener("click", popupCreation);
 
   // OTHER LINKS
   const createSocialLinks = () => {
