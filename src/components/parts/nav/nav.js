@@ -22,7 +22,8 @@ export const printNav = (arr) => {
     // liNav.addEventListener("mouseout", hoverNavElement);
     let linkLiNav = document.createElement("a");
     linkLiNav.innerText = element;
-    linkLiNav.href = `#${element}`;
+
+    linkLiNav.href = `#${element}` + "Section";
     linkLiNav.className = "link-li-nav";
     let liNavMask = document.createElement("div");
     liNavMask.classList.add("nav-li-mask");

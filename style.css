@@ -43,6 +43,7 @@
 html {
   background-color: var(--NW-light-grey);
   scroll-behavior: smooth;
+  overflow-y: hidden;
 }
 
 .page-loader-div {
@@ -74,4 +75,8 @@ p {
   font-size: var(--NW-font-size-p);
   font-weight: var(--NW-font-weight-p);
   color: var(--NW-dark-grey);
+}
+
+button {
+  cursor: pointer;
 }

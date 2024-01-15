@@ -40,10 +40,15 @@ export const printWhatSct = (sectionName) => {
     let projectDiv = document.createElement("div");
     projectDiv.classList.add("project");
     projectDiv.setAttribute("id", `${project}`);
-    let pName = project.projectName;
-    let pYear = project.year;
-    let pCategory = project.category;
-    let pUrl = project.url;
+
+    let pName = data.projects[project].projectName;
+    let pYear = data.projects[project].year;
+    let pCategory = data.projects[project].category;
+    let pUrl = data.projects[project].url;
+
+    projectDiv.addEventListener("click", () => {
+      window.open(pUrl, "_blank");
+    });
 
     let randomNumber = getRandomInteger();
     if (randomNumber > 3) {

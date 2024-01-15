@@ -13,7 +13,7 @@ app.append(sectionsDivDom);
 addSideScroll(sectionsDivDom);
 
 import { launchPageLoader } from "./src/components/parts/individual-functions/page-loader";
-// launchPageLoader();
+launchPageLoader();
 // Podemos usar window.onload() para el page loader ?
 
 import { printWhoSct } from "./src/components/parts/sections/whoSct.js";
@@ -29,7 +29,6 @@ printMoreSct("moreSection");
 import { printDailyMsg } from "./src/components/parts/daily-msg/daily-msg";
 printDailyMsg();
 
-import {
-  getMousePosition,
-  printProjectInfo,
-} from "./src/components/parts/individual-functions/projects-hover.js";
+import { addProjectsInfo } from "./src/components/parts/individual-functions/projects-hover.js";
+
+addProjectsInfo();

@@ -153,7 +153,7 @@ const data = {
       },
     },
   },
-  navTexts: ["who", "do", "know", "more"],
+  navTexts: ["who", "what", "know", "more"],
   dailyMessages: [
     "Working on Weekends?",
     "Long week ahead?",

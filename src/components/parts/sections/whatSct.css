@@ -41,6 +41,7 @@
   min-height: 10px;
   filter: grayscale(0);
   transition: var(--NW-transition-01);
+  cursor: pointer;
 }
 
 .project-image {

@@ -1,3 +1,4 @@
+/*TEXT CHANGED BY FUNCTIONS */
 .change-word-color {
   color: var(--NW-aqua);
 }
@@ -36,4 +37,12 @@
   border: none;
 
   color: var(--NW-aqua);
+}
+
+/* PROJECTS HOVER */
+.project-info-container {
+  /* width: 200px; */
+  /* height: 100px; */
+  background-color: var(--NW-aqua);
+  padding: 1rem;
 }
