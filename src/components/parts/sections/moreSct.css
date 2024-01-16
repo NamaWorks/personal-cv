@@ -125,3 +125,40 @@ label {
     text-indent: -10rem;
   }
 }
+
+@media only screen and (max-width: 480px) {
+  #moreSection {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 3rem;
+    width: 100svw;
+    /* top: 10svh; */
+  }
+
+  #moreSection h3 {
+    text-indent: 0rem;
+  }
+  .moreSection-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 5svw;
+    top: 0svh;
+  }
+
+  #social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  #social-links a {
+    font-size: 0.75rem;
+  }
+}

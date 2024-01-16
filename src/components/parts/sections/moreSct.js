@@ -92,6 +92,7 @@ export const printMoreSct = (sectionName) => {
     moreSectionContent.append(socialLinksDiv);
     for (const socialMedia in data.sections.moreSection.otherLinks) {
       let socialMediaLinkDom = document.createElement("a");
+      socialMediaLinkDom.setAttribute("target", "_blank");
       socialMediaLinkDom.innerText = socialMedia;
       socialMediaLinkDom.href =
         data.sections.moreSection.otherLinks[socialMedia];

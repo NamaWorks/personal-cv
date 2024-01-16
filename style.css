@@ -42,7 +42,7 @@
 
 html {
   background-color: var(--NW-light-grey);
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
   /* overflow-y: hidden; */
 }
 

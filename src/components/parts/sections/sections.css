@@ -62,3 +62,11 @@ section {
     gap: 10rem;
   }
 }
+@media only screen and (max-width: 780) {
+  #whoSection .section-title,
+  #whatSection .section-title,
+  #knowSection .section-title,
+  #moreSection .section-title {
+    font-size: 1rem;
+  }
+}

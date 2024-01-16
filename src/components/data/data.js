@@ -138,7 +138,7 @@ const data = {
         linkedIn: "https://www.linkedin.com/in/pedro-naya-907820148/",
         gitHub: "https://github.com/NamaWorks",
         namaWorks: "https://nama.works/",
-        eMail: "hi@nama.works",
+        eMail: "mailto:hi@nama.works",
         vimeo: "https://vimeo.com/pedronaya",
       },
       sectionBgTexts: "get in touch",
@@ -147,7 +147,7 @@ const data = {
       sectionBgTexts: ["thanks", "for visiting"],
       footerLinks: {
         privacyPolicyUrl: "https://en.wikipedia.org/wiki/Privacy_policy",
-        moreWorkUrl: "https://nama.works/",
+        moreWorkUrl: "mailto:https://nama.works/",
         spotifyListEmbed:
           '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6TKR0984PIhJawnBfy5ocz?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>',
       },

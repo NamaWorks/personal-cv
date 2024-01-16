@@ -4,7 +4,7 @@ export const addSideScroll = (element) => {
   const sideScroll = (event) => {
     event.preventDefault();
     element.scrollBy({
-      left: event.deltaY < 0 ? -50 : 50,
+      left: event.deltaY < 0 ? -225 : 225,
     });
   };
   element.addEventListener("wheel", sideScroll);

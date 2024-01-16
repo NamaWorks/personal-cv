@@ -15,7 +15,7 @@
   #daily-msg {
     position: absolute;
     transform: rotate(0deg);
-    top: 92svh;
+    top: 88svh;
     left: 5svh;
     font-weight: var(--NW-font-weight-titles);
     text-transform: capitalize;
@@ -26,13 +26,13 @@
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 780px) {
   #daily-msg {
     /* width: 50svw; */
     position: absolute;
     transform: rotate(0deg);
-    top: 92svh;
-    left: 5svh;
+    top: 94svh;
+    left: 9svh;
     font-weight: var(--NW-font-weight-titles);
     text-transform: capitalize;
     background-color: var(--NW-aqua);

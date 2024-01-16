@@ -8,12 +8,12 @@ nav {
 
 #top-left-logo {
   position: absolute;
-  min-width: 50px;
+  min-width: 40px;
   width: 5svw;
   max-width: 125px;
   bottom: 100%;
   top: -92svh;
-  left: 6svh;
+  left: 4svh;
 }
 
 .ul-nav {
@@ -70,28 +70,6 @@ nav {
 }
 
 @media only screen and (max-width: 780px) {
-  nav {
-    position: fixed;
-    /* top: 0; */
-    bottom: 0;
-    right: -10px;
-    background-color: var(--NW-aqua);
-    width: 20%;
-    height: 200px;
-    z-index: 99;
-    /* mix-blend-mode: multiply; */
-  }
-
-  .ul-nav {
-    position: relative;
-    bottom: 0px;
-    right: 5px;
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    font-size: var(--NW-font-size-titles);
-    gap: 0;
-  }
   .li-nav {
     color: var(--NW-dark-grey);
     display: flex;
@@ -102,13 +80,36 @@ nav {
     padding: 2px 25px;
   }
 
+  nav {
+    position: fixed;
+    bottom: 94%;
+    background-color: var(--NW-dark-grey-opacity);
+    width: 100%;
+    z-index: 99;
+  }
+
+  .ul-nav {
+    position: relative;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: var(--NW-font-size-titles);
+    gap: 0;
+  }
+
+  nav li {
+    font-size: 1rem;
+  }
+
   #top-left-logo {
     position: absolute;
-    min-width: 50px;
-    width: 5svw;
-    max-width: 125px;
+    min-width: 20px;
+    width: 3svw;
+    max-width: 100px;
     /* bottom: 150%; */
-    top: -67svh;
-    left: -75svw;
+    top: 91svh;
+    left: 3svw;
   }
 }

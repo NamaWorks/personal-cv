@@ -20,4 +20,9 @@
   #whoSection .section-texts {
     max-width: 70svw;
   }
+
+  #whoSection {
+    right: -0svw;
+    top: -5svh;
+  }
 }

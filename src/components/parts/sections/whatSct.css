@@ -61,12 +61,14 @@
   #whatSection {
     display: flex;
     flex-direction: column;
+    position: relative;
+    left: -5svw;
   }
 
   #whatSection .section-texts {
     position: relative;
     top: 10svh;
-    left: 0svw;
+    /* left: -5svw; */
     max-width: 60svw;
   }
 
