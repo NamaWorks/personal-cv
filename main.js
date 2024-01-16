@@ -2,7 +2,6 @@ import "./style.css";
 import "./src/components/parts/individual-functions/function-styles-changes.css";
 import data from "./src/components/data/data";
 import { sectionsDivDom, app } from "./src/components/data/global_variables";
-import "./src/components/parts/change-cursor/change-mouse-cursor.js";
 
 import { printNav } from "./src/components/parts/nav/nav";
 printNav(data.navTexts);
@@ -10,6 +9,7 @@ printNav(data.navTexts);
 import { addSideScroll } from "./src/components/parts/individual-functions/add-side-scroll";
 sectionsDivDom.setAttribute("id", "div-for-x-scroll");
 app.append(sectionsDivDom);
+
 addSideScroll(sectionsDivDom);
 
 import { launchPageLoader } from "./src/components/parts/individual-functions/page-loader";

@@ -2,11 +2,43 @@
   position: absolute;
   transform: rotate(90deg);
   top: 50%;
-  left: -3svw;
+  left: -5svw;
   font-weight: var(--NW-font-weight-titles);
   text-transform: capitalize;
   background-color: var(--NW-aqua);
   z-index: 99;
   padding: 0.3rem;
   user-select: none;
+}
+
+@media only screen and (max-width: 1250px) {
+  #daily-msg {
+    position: absolute;
+    transform: rotate(0deg);
+    top: 92svh;
+    left: 5svh;
+    font-weight: var(--NW-font-weight-titles);
+    text-transform: capitalize;
+    background-color: var(--NW-aqua);
+    z-index: 99;
+    padding: 0.3rem;
+    user-select: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #daily-msg {
+    /* width: 50svw; */
+    position: absolute;
+    transform: rotate(0deg);
+    top: 92svh;
+    left: 5svh;
+    font-weight: var(--NW-font-weight-titles);
+    text-transform: capitalize;
+    background-color: var(--NW-aqua);
+    font-size: 0.75rem;
+    z-index: 99;
+    padding: 0.3rem;
+    user-select: none;
+  }
 }

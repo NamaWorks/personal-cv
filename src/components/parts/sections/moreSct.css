@@ -13,7 +13,7 @@
 
 #moreSection .bg-text {
   position: absolute;
-  left: 5svw;
+  left: -10svw;
   bottom: 25svh;
   font-size: 12rem;
   line-height: 12rem;
@@ -76,6 +76,7 @@ textarea#description-input {
   border-radius: 0;
   height: 4svh;
   width: 15svw;
+  min-width: 135px;
   align-self: flex-end;
   background-color: var(--NW-dark-grey);
   position: relative;
@@ -99,4 +100,28 @@ label {
   position: relative;
   top: 1rem;
   left: 1rem;
+}
+
+@media only screen and (max-width: 780px) {
+  #moreSection .bg-text {
+    position: absolute;
+    left: -35svw;
+    bottom: 15svh;
+    font-size: 12rem;
+    line-height: 12rem;
+  }
+
+  #moreSection {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 60px;
+    gap: 3rem;
+    width: 50svw;
+    /* top: 10svh; */
+  }
+
+  #moreSection h3 {
+    text-indent: -10rem;
+  }
 }

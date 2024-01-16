@@ -4,8 +4,10 @@
   overflow-x: scroll;
   grid-template-columns: repeat(5, auto);
   align-items: center;
+  /* justify-content: center; */
   /* scroll-snap-type: x mandatory; */
   scroll-behavior: smooth;
+  overflow-y: hidden;
   /* scroll-snap-stop: normal; */
 }
 
@@ -34,13 +36,14 @@ section {
   font-size: var(--NW-font-size-bg-titles);
   text-transform: uppercase;
   /* text-align: right; */
-  opacity: 10%;
+  opacity: 3%;
   max-width: 1000px;
   /* position: relative; */
   /* left: -25svw; */
   /* top: -2svw; */
   line-height: var(--NW-line-height-bg-titles);
   user-select: none;
+  z-index: -1;
 }
 
 .section-title {
@@ -52,4 +55,10 @@ section {
   position: relative;
   left: 50px;
   top: 50px;
+}
+
+@media only screen and (max-width: 1250px) {
+  #div-for-x-scroll {
+    gap: 10rem;
+  }
 }

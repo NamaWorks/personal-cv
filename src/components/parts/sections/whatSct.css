@@ -13,8 +13,8 @@
 #whatSection .section-texts {
   position: relative;
   top: -8svh;
-  left: 15svw;
-  max-width: 400px;
+  left: 5svw;
+  max-width: 40svw;
 }
 
 .portfolio-grid {
@@ -24,7 +24,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  right: -35svw;
+  right: -15svw;
   height: 80svh;
   overflow: hidden;
   gap: 0;
@@ -55,4 +55,39 @@
 .project:hover {
   flex: 2;
   filter: grayscale(1);
+}
+
+@media only screen and (max-width: 480px) {
+  #whatSection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #whatSection .section-texts {
+    position: relative;
+    top: 10svh;
+    left: 0svw;
+    max-width: 60svw;
+  }
+
+  .portfolio-grid {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 20svh;
+    max-width: 60svw;
+    flex-wrap: wrap;
+    /* right: -15svw; */
+    height: 10svh;
+    overflow: visible;
+  }
+  .project {
+    height: 10svh;
+    min-width: 40px;
+    flex: 1fr;
+  }
+  .project-image {
+    height: 100%;
+    width: auto;
+  }
 }
