@@ -9,7 +9,7 @@ export const popupCreation = () => {
     textDivPopUp.setAttribute("id", "pop-upt-text");
     let textPopUp = document.createElement("p");
     textPopUp.innerText =
-      "We are still working on the form feature. \n Would you like to send an email?";
+      "We are still working in the form feature. \n Would you like to send an email?";
     let buttonsDiv = document.createElement("div");
     buttonsDiv.setAttribute("id", "buttons-container");
     let noButton = document.createElement("button");

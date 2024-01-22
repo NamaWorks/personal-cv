@@ -51,10 +51,10 @@ export const addProjectsInfo = () => {
         printProjectInfo(parentId);
       } else if (document.contains(projectInfoContainer)) {
         let parentIdName = data.projects[parentId].projectName;
-        console.log(parentIdName);
+        // console.log(parentIdName);
         let projectInfoNameDom = document.querySelector("#project-name");
         let projectInfoName = projectInfoNameDom.innerText;
-        console.log(projectInfoName);
+        // console.log(projectInfoName);
         let mouseXCoord = mouseCoordinates[0];
         let mouseYCoord = mouseCoordinates[1];
         projectInfoContainer.style.left = mouseXCoord + "px";
