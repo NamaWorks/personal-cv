@@ -4,7 +4,7 @@ export const addSideScroll = (element) => {
   const sideScroll = (event) => {
     event.preventDefault();
     element.scrollBy({
-      left: event.deltaY < 0 ? -225 : 225,
+      left: event.deltaY < 0 ? -70 : 70,
     });
   };
   element.addEventListener("wheel", sideScroll);
@@ -12,8 +12,8 @@ export const addSideScroll = (element) => {
 
 export const getWindowWidth = () => {
   let windowWidth = window.innerWidth;
-  console.log(windowWidth);
+  // console.log(windowWidth);
   return windowWidth;
 };
 
-window.addEventListener("resize", console.log(window.innerWidth));
+// window.addEventListener("resize", console.log(window.innerWidth));

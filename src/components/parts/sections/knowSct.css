@@ -1,11 +1,11 @@
 #knowSection {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: flex-start;
   flex-wrap: nowrap;
   gap: 1rem;
-  width: 100svw;
+  width: 65svw;
   height: 100svh;
   padding: var(--NW-section-padding-01);
 }
@@ -13,13 +13,18 @@
 .knowSection-content {
   display: flex;
   flex-direction: row;
-
   justify-content: center;
   position: relative;
   left: 7svw;
   flex-wrap: wrap;
   max-height: 90svh;
-  /* gap: 5rem; */
+  gap: 5rem;
+}
+
+#categories-div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .knowSection-content > div {
@@ -44,17 +49,17 @@
   gap: 1rem;
 }
 
-#skills ul {
+#skills-list ul {
   gap: 0.25rem;
 }
 
-#skills li {
+#skills-list li {
   font-size: var(--NW-font-size-p);
   text-transform: uppercase;
   color: var(--NW-dark-grey);
 }
 
-#experience a {
+#list-div a {
   color: var(--NW-dark-grey);
 }
 
@@ -62,7 +67,7 @@
   #knowSection {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: flex-start;
     flex-wrap: nowrap;
     gap: 1rem;
@@ -113,6 +118,8 @@
   #knowSection {
     width: 300svw;
     height: 85svh;
+    display: flex;
+    align-items: start;
   }
 
   .knowSection-content > div {
@@ -128,7 +135,7 @@
     display: flex;
     flex-direction: row;
     /* width: 100%; */
-    justify-content: center;
+    justify-content: start;
     position: relative;
     left: 0svw;
     flex-wrap: wrap;

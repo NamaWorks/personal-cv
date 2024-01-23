@@ -4,7 +4,7 @@ import data from "./src/components/data/data";
 import { sectionsDivDom, app } from "./src/components/data/global_variables";
 
 import { launchPageLoader } from "./src/components/parts/individual-functions/page-loader";
-launchPageLoader();
+// launchPageLoader();
 // Podemos usar window.onload() para el page loader ?
 
 import { printNav } from "./src/components/parts/nav/nav";
